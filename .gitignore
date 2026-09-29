@@ -1,17 +1,52 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.so
+
+# 虚拟环境
 .venv/
 venv/
 env/
+ENV/
+
+# 打包与分发
+build/
+dist/
+*.egg-info/
+.eggs/
 
 # IDE
 .idea/
 .vscode/
 *.swp
+*.swo
 
-# 输出图片
+# Jupyter
+.ipynb_checkpoints/
+
+# 数据集
+cnews/*
+!cnews/.gitkeep
+data/
+
+# 模型文件
+*.h5
+*.keras
+*.ckpt
+*.pkl
+*.npy
+*.npz
+*.bin
+
+# 输出文件
 outputs/
 *.png
 !docs/*.png
+
+# 日志
+*.log
+
+# 操作系统
+.DS_Store
+Thumbs.db
